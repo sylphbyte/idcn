@@ -1,4 +1,4 @@
 module github.com/sylphbyte/idcn
 
-go 1.24.2
+go 1.23.4
 
