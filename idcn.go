@@ -278,7 +278,7 @@ func getAreaByCode(code uint32) (*src.AreaInfo, error) {
 	}
 
 	// 至少要有省份信息
-	if area.Province == "" {
+	if area.Province == "" || area.City == "" {
 		// 尝试从历史数据获取完整信息作为兜底
 		if info := src.GetHistoryAreaInfo(code); info != nil {
 			return info, nil
